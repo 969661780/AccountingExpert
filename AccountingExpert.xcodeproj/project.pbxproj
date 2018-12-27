@@ -1,0 +1,1123 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E2D605D20D8CE1100F0EF9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D605C20D8CE1100F0EF9E /* AppDelegate.m */; };
+		0E2D606320D8CE1100F0EF9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E2D606120D8CE1100F0EF9E /* Main.storyboard */; };
+		0E2D606520D8CE1B00F0EF9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2D606420D8CE1B00F0EF9E /* Assets.xcassets */; };
+		0E2D606820D8CE1B00F0EF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E2D606620D8CE1B00F0EF9E /* LaunchScreen.storyboard */; };
+		0E2D606B20D8CE1B00F0EF9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D606A20D8CE1B00F0EF9E /* main.m */; };
+		0E2D607520D8CE1B00F0EF9E /* AccountingExpertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D607420D8CE1B00F0EF9E /* AccountingExpertTests.m */; };
+		0E2D608020D8CE1B00F0EF9E /* AccountingExpertUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D607F20D8CE1B00F0EF9E /* AccountingExpertUITests.m */; };
+		0E2D609920D8D42300F0EF9E /* MTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D609720D8D42300F0EF9E /* MTHomeViewController.m */; };
+		0E2D609A20D8D42300F0EF9E /* MTHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E2D609820D8D42300F0EF9E /* MTHomeViewController.xib */; };
+		0E2D609E20D8D43B00F0EF9E /* MTChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D609C20D8D43B00F0EF9E /* MTChartViewController.m */; };
+		0E2D609F20D8D43B00F0EF9E /* MTChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E2D609D20D8D43B00F0EF9E /* MTChartViewController.xib */; };
+		0E2D60A620D8D46000F0EF9E /* MTAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D60A420D8D46000F0EF9E /* MTAddViewController.m */; };
+		0E2D60A720D8D46000F0EF9E /* MTAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E2D60A520D8D46000F0EF9E /* MTAddViewController.xib */; };
+		0E2D60AE20D8D48300F0EF9E /* MTCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D60AC20D8D48300F0EF9E /* MTCardsViewController.m */; };
+		0E2D60AF20D8D48300F0EF9E /* MTCardsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E2D60AD20D8D48300F0EF9E /* MTCardsViewController.xib */; };
+		0E2D60B320D8D49300F0EF9E /* MTSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D60B120D8D49300F0EF9E /* MTSettingViewController.m */; };
+		0E2D60B420D8D49300F0EF9E /* MTSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E2D60B220D8D49300F0EF9E /* MTSettingViewController.xib */; };
+		0E2D60B820D8D61A00F0EF9E /* ZHNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D60B720D8D61A00F0EF9E /* ZHNavViewController.m */; };
+		0E2D60BE20D8D9B200F0EF9E /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D60BD20D8D9B200F0EF9E /* UIBarButtonItem+Extension.m */; };
+		0E2D60C120D8D9F000F0EF9E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D60BF20D8D9F000F0EF9E /* UIView+Extension.m */; };
+		0E2D60C720D8DC8C00F0EF9E /* LLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D60C420D8DC8C00F0EF9E /* LLTabBar.m */; };
+		0E2D60C820D8DC8C00F0EF9E /* LLTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D60C620D8DC8C00F0EF9E /* LLTabBarItem.m */; };
+		0E34C95220DA40D20036BCDF /* MTHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E34C95020DA40D20036BCDF /* MTHomeTableViewCell.m */; };
+		0E34C95320DA40D20036BCDF /* MTHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E34C95120DA40D20036BCDF /* MTHomeTableViewCell.xib */; };
+		0E34C95A20DA43840036BCDF /* MTHomeDateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E34C95820DA43840036BCDF /* MTHomeDateTableViewCell.m */; };
+		0E34C95B20DA43840036BCDF /* MTHomeDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E34C95920DA43840036BCDF /* MTHomeDateTableViewCell.xib */; };
+		0E34C95E20DA46360036BCDF /* MTFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E34C95D20DA46360036BCDF /* MTFootView.m */; };
+		0E34C96A20DA48500036BCDF /* WSChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E34C96120DA48500036BCDF /* WSChart.m */; };
+		0E34C96B20DA48500036BCDF /* WSPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E34C96320DA48500036BCDF /* WSPieChart.m */; };
+		0E34C96C20DA48500036BCDF /* WSPieForeBGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E34C96520DA48500036BCDF /* WSPieForeBGView.m */; };
+		0E34C96D20DA48500036BCDF /* WSPieItemsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E34C96720DA48500036BCDF /* WSPieItemsView.m */; };
+		0E34C96E20DA48500036BCDF /* WSShowInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E34C96920DA48500036BCDF /* WSShowInfoView.m */; };
+		0E34C97220DA4A510036BCDF /* MTChartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E34C97020DA4A510036BCDF /* MTChartTableViewCell.m */; };
+		0E34C97320DA4A510036BCDF /* MTChartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E34C97120DA4A510036BCDF /* MTChartTableViewCell.xib */; };
+		0E34C97720DA4F780036BCDF /* MTCardsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E34C97520DA4F780036BCDF /* MTCardsTableViewCell.m */; };
+		0E34C97820DA4F780036BCDF /* MTCardsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E34C97620DA4F780036BCDF /* MTCardsTableViewCell.xib */; };
+		0E34C97F20DA57A10036BCDF /* MTAddCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E34C97D20DA57A10036BCDF /* MTAddCollectionViewCell.m */; };
+		0E34C98020DA57A10036BCDF /* MTAddCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E34C97E20DA57A10036BCDF /* MTAddCollectionViewCell.xib */; };
+		0EC49C3F20DB4C46005F6D9E /* PGGDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC49C3E20DB4C45005F6D9E /* PGGDropView.m */; };
+		0EC49C4920DB5404005F6D9E /* MTCategorysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC49C4720DB5404005F6D9E /* MTCategorysViewController.m */; };
+		0EC49C4A20DB5404005F6D9E /* MTCategorysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EC49C4820DB5404005F6D9E /* MTCategorysViewController.xib */; };
+		0EC49C4F20DB552D005F6D9E /* MTCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC49C4D20DB552D005F6D9E /* MTCategoryTableViewCell.m */; };
+		0EC49C5020DB552D005F6D9E /* MTCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EC49C4E20DB552D005F6D9E /* MTCategoryTableViewCell.xib */; };
+		0EC49C5320DB77D8005F6D9E /* MTMoneyMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC49C5220DB77D8005F6D9E /* MTMoneyMode.m */; };
+		0EC49C5620DB83E2005F6D9E /* MTAddModeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC49C5520DB83E2005F6D9E /* MTAddModeTool.m */; };
+		0ED05F1920E0811B007DA24B /* MTChatBingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED05F1720E0811B007DA24B /* MTChatBingTableViewCell.m */; };
+		0ED05F1A20E0811B007DA24B /* MTChatBingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ED05F1820E0811B007DA24B /* MTChatBingTableViewCell.xib */; };
+		3ED97103A4B25C1771112DE1 /* libPods-AccountingExpertUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E89420177E6EBE8B32B037D8 /* libPods-AccountingExpertUITests.a */; };
+		7FF0F21C2E0733DBCCD17367 /* libPods-AccountingExpert.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C04D2BEEDF7954EBB217623 /* libPods-AccountingExpert.a */; };
+		9AD39AAB20DD5116006E9777 /* WBNativityShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD39AAA20DD5116006E9777 /* WBNativityShare.m */; };
+		DB98F1DF5F8303C7F70223A7 /* libPods-AccountingExpertTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D830F518E0BC25E2C0AD7A /* libPods-AccountingExpertTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E2D607120D8CE1B00F0EF9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E2D605020D8CE1100F0EF9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E2D605720D8CE1100F0EF9E;
+			remoteInfo = AccountingExpert;
+		};
+		0E2D607C20D8CE1B00F0EF9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E2D605020D8CE1100F0EF9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E2D605720D8CE1100F0EF9E;
+			remoteInfo = AccountingExpert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E2D605820D8CE1100F0EF9E /* AccountingExpert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountingExpert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E2D605B20D8CE1100F0EF9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0E2D605C20D8CE1100F0EF9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0E2D606220D8CE1100F0EF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E2D606420D8CE1B00F0EF9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E2D606720D8CE1B00F0EF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0E2D606920D8CE1B00F0EF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E2D606A20D8CE1B00F0EF9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0E2D607020D8CE1B00F0EF9E /* AccountingExpertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccountingExpertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E2D607420D8CE1B00F0EF9E /* AccountingExpertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountingExpertTests.m; sourceTree = "<group>"; };
+		0E2D607620D8CE1B00F0EF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E2D607B20D8CE1B00F0EF9E /* AccountingExpertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccountingExpertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E2D607F20D8CE1B00F0EF9E /* AccountingExpertUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountingExpertUITests.m; sourceTree = "<group>"; };
+		0E2D608120D8CE1B00F0EF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E2D609620D8D42300F0EF9E /* MTHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTHomeViewController.h; sourceTree = "<group>"; };
+		0E2D609720D8D42300F0EF9E /* MTHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTHomeViewController.m; sourceTree = "<group>"; };
+		0E2D609820D8D42300F0EF9E /* MTHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTHomeViewController.xib; sourceTree = "<group>"; };
+		0E2D609B20D8D43B00F0EF9E /* MTChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTChartViewController.h; sourceTree = "<group>"; };
+		0E2D609C20D8D43B00F0EF9E /* MTChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTChartViewController.m; sourceTree = "<group>"; };
+		0E2D609D20D8D43B00F0EF9E /* MTChartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTChartViewController.xib; sourceTree = "<group>"; };
+		0E2D60A320D8D46000F0EF9E /* MTAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTAddViewController.h; sourceTree = "<group>"; };
+		0E2D60A420D8D46000F0EF9E /* MTAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTAddViewController.m; sourceTree = "<group>"; };
+		0E2D60A520D8D46000F0EF9E /* MTAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTAddViewController.xib; sourceTree = "<group>"; };
+		0E2D60AB20D8D48300F0EF9E /* MTCardsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCardsViewController.h; sourceTree = "<group>"; };
+		0E2D60AC20D8D48300F0EF9E /* MTCardsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCardsViewController.m; sourceTree = "<group>"; };
+		0E2D60AD20D8D48300F0EF9E /* MTCardsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTCardsViewController.xib; sourceTree = "<group>"; };
+		0E2D60B020D8D49300F0EF9E /* MTSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTSettingViewController.h; sourceTree = "<group>"; };
+		0E2D60B120D8D49300F0EF9E /* MTSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTSettingViewController.m; sourceTree = "<group>"; };
+		0E2D60B220D8D49300F0EF9E /* MTSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTSettingViewController.xib; sourceTree = "<group>"; };
+		0E2D60B620D8D61A00F0EF9E /* ZHNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHNavViewController.h; sourceTree = "<group>"; };
+		0E2D60B720D8D61A00F0EF9E /* ZHNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHNavViewController.m; sourceTree = "<group>"; };
+		0E2D60BA20D8D8E400F0EF9E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0E2D60BC20D8D9B200F0EF9E /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		0E2D60BD20D8D9B200F0EF9E /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		0E2D60BF20D8D9F000F0EF9E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		0E2D60C020D8D9F000F0EF9E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		0E2D60C320D8DC8C00F0EF9E /* LLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBar.h; sourceTree = "<group>"; };
+		0E2D60C420D8DC8C00F0EF9E /* LLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTabBar.m; sourceTree = "<group>"; };
+		0E2D60C520D8DC8C00F0EF9E /* LLTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBarItem.h; sourceTree = "<group>"; };
+		0E2D60C620D8DC8C00F0EF9E /* LLTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTabBarItem.m; sourceTree = "<group>"; };
+		0E34C94F20DA40D20036BCDF /* MTHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTHomeTableViewCell.h; sourceTree = "<group>"; };
+		0E34C95020DA40D20036BCDF /* MTHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTHomeTableViewCell.m; sourceTree = "<group>"; };
+		0E34C95120DA40D20036BCDF /* MTHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTHomeTableViewCell.xib; sourceTree = "<group>"; };
+		0E34C95720DA43840036BCDF /* MTHomeDateTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTHomeDateTableViewCell.h; sourceTree = "<group>"; };
+		0E34C95820DA43840036BCDF /* MTHomeDateTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTHomeDateTableViewCell.m; sourceTree = "<group>"; };
+		0E34C95920DA43840036BCDF /* MTHomeDateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTHomeDateTableViewCell.xib; sourceTree = "<group>"; };
+		0E34C95C20DA46360036BCDF /* MTFootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTFootView.h; sourceTree = "<group>"; };
+		0E34C95D20DA46360036BCDF /* MTFootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTFootView.m; sourceTree = "<group>"; };
+		0E34C96020DA48500036BCDF /* WSChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSChart.h; sourceTree = "<group>"; };
+		0E34C96120DA48500036BCDF /* WSChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSChart.m; sourceTree = "<group>"; };
+		0E34C96220DA48500036BCDF /* WSPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPieChart.h; sourceTree = "<group>"; };
+		0E34C96320DA48500036BCDF /* WSPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPieChart.m; sourceTree = "<group>"; };
+		0E34C96420DA48500036BCDF /* WSPieForeBGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPieForeBGView.h; sourceTree = "<group>"; };
+		0E34C96520DA48500036BCDF /* WSPieForeBGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPieForeBGView.m; sourceTree = "<group>"; };
+		0E34C96620DA48500036BCDF /* WSPieItemsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPieItemsView.h; sourceTree = "<group>"; };
+		0E34C96720DA48500036BCDF /* WSPieItemsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPieItemsView.m; sourceTree = "<group>"; };
+		0E34C96820DA48500036BCDF /* WSShowInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSShowInfoView.h; sourceTree = "<group>"; };
+		0E34C96920DA48500036BCDF /* WSShowInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSShowInfoView.m; sourceTree = "<group>"; };
+		0E34C96F20DA4A510036BCDF /* MTChartTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTChartTableViewCell.h; sourceTree = "<group>"; };
+		0E34C97020DA4A510036BCDF /* MTChartTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTChartTableViewCell.m; sourceTree = "<group>"; };
+		0E34C97120DA4A510036BCDF /* MTChartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTChartTableViewCell.xib; sourceTree = "<group>"; };
+		0E34C97420DA4F780036BCDF /* MTCardsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCardsTableViewCell.h; sourceTree = "<group>"; };
+		0E34C97520DA4F780036BCDF /* MTCardsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCardsTableViewCell.m; sourceTree = "<group>"; };
+		0E34C97620DA4F780036BCDF /* MTCardsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTCardsTableViewCell.xib; sourceTree = "<group>"; };
+		0E34C97C20DA57A10036BCDF /* MTAddCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTAddCollectionViewCell.h; sourceTree = "<group>"; };
+		0E34C97D20DA57A10036BCDF /* MTAddCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTAddCollectionViewCell.m; sourceTree = "<group>"; };
+		0E34C97E20DA57A10036BCDF /* MTAddCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTAddCollectionViewCell.xib; sourceTree = "<group>"; };
+		0EC49C3D20DB4C45005F6D9E /* PGGDropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGGDropView.h; sourceTree = "<group>"; };
+		0EC49C3E20DB4C45005F6D9E /* PGGDropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGGDropView.m; sourceTree = "<group>"; };
+		0EC49C4620DB5404005F6D9E /* MTCategorysViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCategorysViewController.h; sourceTree = "<group>"; };
+		0EC49C4720DB5404005F6D9E /* MTCategorysViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCategorysViewController.m; sourceTree = "<group>"; };
+		0EC49C4820DB5404005F6D9E /* MTCategorysViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTCategorysViewController.xib; sourceTree = "<group>"; };
+		0EC49C4C20DB552D005F6D9E /* MTCategoryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCategoryTableViewCell.h; sourceTree = "<group>"; };
+		0EC49C4D20DB552D005F6D9E /* MTCategoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCategoryTableViewCell.m; sourceTree = "<group>"; };
+		0EC49C4E20DB552D005F6D9E /* MTCategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		0EC49C5120DB77D8005F6D9E /* MTMoneyMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMoneyMode.h; sourceTree = "<group>"; };
+		0EC49C5220DB77D8005F6D9E /* MTMoneyMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTMoneyMode.m; sourceTree = "<group>"; };
+		0EC49C5420DB83E2005F6D9E /* MTAddModeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTAddModeTool.h; sourceTree = "<group>"; };
+		0EC49C5520DB83E2005F6D9E /* MTAddModeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTAddModeTool.m; sourceTree = "<group>"; };
+		0ED05F1620E0811B007DA24B /* MTChatBingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTChatBingTableViewCell.h; sourceTree = "<group>"; };
+		0ED05F1720E0811B007DA24B /* MTChatBingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTChatBingTableViewCell.m; sourceTree = "<group>"; };
+		0ED05F1820E0811B007DA24B /* MTChatBingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTChatBingTableViewCell.xib; sourceTree = "<group>"; };
+		0F6F63BFE4CA804BEA221DBB /* Pods-AccountingExpertUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountingExpertUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AccountingExpertUITests/Pods-AccountingExpertUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		207223CB55AC56DE85C52C95 /* Pods-AccountingExpert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountingExpert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AccountingExpert/Pods-AccountingExpert.debug.xcconfig"; sourceTree = "<group>"; };
+		49DFC52B8A45B4B3F4D4BAA6 /* Pods-AccountingExpertUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountingExpertUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AccountingExpertUITests/Pods-AccountingExpertUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6C04D2BEEDF7954EBB217623 /* libPods-AccountingExpert.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AccountingExpert.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99C4D95839F09F3FD758A13E /* Pods-AccountingExpertTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountingExpertTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AccountingExpertTests/Pods-AccountingExpertTests.release.xcconfig"; sourceTree = "<group>"; };
+		9AD39AA720DD48FC006E9777 /* AccountingExpert.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AccountingExpert.entitlements; sourceTree = "<group>"; };
+		9AD39AA920DD5116006E9777 /* WBNativityShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBNativityShare.h; sourceTree = "<group>"; };
+		9AD39AAA20DD5116006E9777 /* WBNativityShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBNativityShare.m; sourceTree = "<group>"; };
+		9F0DBF91C7A71B6810BC6763 /* Pods-AccountingExpertTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountingExpertTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AccountingExpertTests/Pods-AccountingExpertTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5D830F518E0BC25E2C0AD7A /* libPods-AccountingExpertTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AccountingExpertTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8593FF75DC47332A277E605 /* Pods-AccountingExpert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountingExpert.release.xcconfig"; path = "Pods/Target Support Files/Pods-AccountingExpert/Pods-AccountingExpert.release.xcconfig"; sourceTree = "<group>"; };
+		E89420177E6EBE8B32B037D8 /* libPods-AccountingExpertUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AccountingExpertUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E2D605520D8CE1100F0EF9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF0F21C2E0733DBCCD17367 /* libPods-AccountingExpert.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E2D606D20D8CE1B00F0EF9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB98F1DF5F8303C7F70223A7 /* libPods-AccountingExpertTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E2D607820D8CE1B00F0EF9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED97103A4B25C1771112DE1 /* libPods-AccountingExpertUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E2D604F20D8CE1000F0EF9E = {
+			isa = PBXGroup;
+			children = (
+				0E2D605A20D8CE1100F0EF9E /* AccountingExpert */,
+				0E2D607320D8CE1B00F0EF9E /* AccountingExpertTests */,
+				0E2D607E20D8CE1B00F0EF9E /* AccountingExpertUITests */,
+				0E2D605920D8CE1100F0EF9E /* Products */,
+				F1E66978D414F281198A846E /* Pods */,
+				45F25DF9DB117E7C0BCC3092 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0E2D605920D8CE1100F0EF9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E2D605820D8CE1100F0EF9E /* AccountingExpert.app */,
+				0E2D607020D8CE1B00F0EF9E /* AccountingExpertTests.xctest */,
+				0E2D607B20D8CE1B00F0EF9E /* AccountingExpertUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E2D605A20D8CE1100F0EF9E /* AccountingExpert */ = {
+			isa = PBXGroup;
+			children = (
+				9AD39AA720DD48FC006E9777 /* AccountingExpert.entitlements */,
+				0E2D60BB20D8D98D00F0EF9E /* Tools */,
+				0E2D60B520D8D5F900F0EF9E /* Main */,
+				0E2D608D20D8D1BB00F0EF9E /* ViewController */,
+				0E2D60BA20D8D8E400F0EF9E /* PrefixHeader.pch */,
+				0E2D605B20D8CE1100F0EF9E /* AppDelegate.h */,
+				0E2D605C20D8CE1100F0EF9E /* AppDelegate.m */,
+				0E2D606120D8CE1100F0EF9E /* Main.storyboard */,
+				0E2D606420D8CE1B00F0EF9E /* Assets.xcassets */,
+				0E2D606620D8CE1B00F0EF9E /* LaunchScreen.storyboard */,
+				0E2D606920D8CE1B00F0EF9E /* Info.plist */,
+				0E2D606A20D8CE1B00F0EF9E /* main.m */,
+			);
+			path = AccountingExpert;
+			sourceTree = "<group>";
+		};
+		0E2D607320D8CE1B00F0EF9E /* AccountingExpertTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E2D607420D8CE1B00F0EF9E /* AccountingExpertTests.m */,
+				0E2D607620D8CE1B00F0EF9E /* Info.plist */,
+			);
+			path = AccountingExpertTests;
+			sourceTree = "<group>";
+		};
+		0E2D607E20D8CE1B00F0EF9E /* AccountingExpertUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0E2D607F20D8CE1B00F0EF9E /* AccountingExpertUITests.m */,
+				0E2D608120D8CE1B00F0EF9E /* Info.plist */,
+			);
+			path = AccountingExpertUITests;
+			sourceTree = "<group>";
+		};
+		0E2D608D20D8D1BB00F0EF9E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0EC49C4520DB50EA005F6D9E /* Category */,
+				0E2D609220D8D25400F0EF9E /* Setting */,
+				0E2D609120D8D24C00F0EF9E /* Cards */,
+				0E2D609020D8D24300F0EF9E /* Add */,
+				0E2D608F20D8D23300F0EF9E /* Chart */,
+				0E2D608E20D8D20E00F0EF9E /* Home */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0E2D608E20D8D20E00F0EF9E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0E34C94B20DA40590036BCDF /* Mode */,
+				0E34C94A20DA40540036BCDF /* View */,
+				0E2D609620D8D42300F0EF9E /* MTHomeViewController.h */,
+				0E2D609720D8D42300F0EF9E /* MTHomeViewController.m */,
+				0E2D609820D8D42300F0EF9E /* MTHomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0E2D608F20D8D23300F0EF9E /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				0E34C94920DA404E0036BCDF /* Mode */,
+				0E34C94820DA40490036BCDF /* View */,
+				0E2D609B20D8D43B00F0EF9E /* MTChartViewController.h */,
+				0E2D609C20D8D43B00F0EF9E /* MTChartViewController.m */,
+				0E2D609D20D8D43B00F0EF9E /* MTChartViewController.xib */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		0E2D609020D8D24300F0EF9E /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				0E34C94720DA40420036BCDF /* Mode */,
+				0E34C94620DA403D0036BCDF /* View */,
+				0E2D60A320D8D46000F0EF9E /* MTAddViewController.h */,
+				0E2D60A420D8D46000F0EF9E /* MTAddViewController.m */,
+				0E2D60A520D8D46000F0EF9E /* MTAddViewController.xib */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		0E2D609120D8D24C00F0EF9E /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				0E34C94520DA40350036BCDF /* Mode */,
+				0E34C94420DA402F0036BCDF /* View */,
+				0E2D60AB20D8D48300F0EF9E /* MTCardsViewController.h */,
+				0E2D60AC20D8D48300F0EF9E /* MTCardsViewController.m */,
+				0E2D60AD20D8D48300F0EF9E /* MTCardsViewController.xib */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		0E2D609220D8D25400F0EF9E /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				0E34C94320DA40230036BCDF /* Mode */,
+				0E34C94220DA401B0036BCDF /* View */,
+				0E2D60B020D8D49300F0EF9E /* MTSettingViewController.h */,
+				0E2D60B120D8D49300F0EF9E /* MTSettingViewController.m */,
+				0E2D60B220D8D49300F0EF9E /* MTSettingViewController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		0E2D60B520D8D5F900F0EF9E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0E2D60B620D8D61A00F0EF9E /* ZHNavViewController.h */,
+				0E2D60B720D8D61A00F0EF9E /* ZHNavViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0E2D60BB20D8D98D00F0EF9E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				9AD39AA820DD5102006E9777 /* Tools */,
+				0E34C95F20DA48500036BCDF /* WSPieChart */,
+				0E2D60C220D8DC8C00F0EF9E /* LLTabBar */,
+				0EC49C3D20DB4C45005F6D9E /* PGGDropView.h */,
+				0EC49C3E20DB4C45005F6D9E /* PGGDropView.m */,
+				0E2D60C020D8D9F000F0EF9E /* UIView+Extension.h */,
+				0E2D60BF20D8D9F000F0EF9E /* UIView+Extension.m */,
+				0E2D60BC20D8D9B200F0EF9E /* UIBarButtonItem+Extension.h */,
+				0E2D60BD20D8D9B200F0EF9E /* UIBarButtonItem+Extension.m */,
+				0EC49C5420DB83E2005F6D9E /* MTAddModeTool.h */,
+				0EC49C5520DB83E2005F6D9E /* MTAddModeTool.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0E2D60C220D8DC8C00F0EF9E /* LLTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0E2D60C320D8DC8C00F0EF9E /* LLTabBar.h */,
+				0E2D60C420D8DC8C00F0EF9E /* LLTabBar.m */,
+				0E2D60C520D8DC8C00F0EF9E /* LLTabBarItem.h */,
+				0E2D60C620D8DC8C00F0EF9E /* LLTabBarItem.m */,
+			);
+			path = LLTabBar;
+			sourceTree = "<group>";
+		};
+		0E34C94220DA401B0036BCDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E34C94320DA40230036BCDF /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mode;
+			sourceTree = "<group>";
+		};
+		0E34C94420DA402F0036BCDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E34C97420DA4F780036BCDF /* MTCardsTableViewCell.h */,
+				0E34C97520DA4F780036BCDF /* MTCardsTableViewCell.m */,
+				0E34C97620DA4F780036BCDF /* MTCardsTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E34C94520DA40350036BCDF /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mode;
+			sourceTree = "<group>";
+		};
+		0E34C94620DA403D0036BCDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E34C97C20DA57A10036BCDF /* MTAddCollectionViewCell.h */,
+				0E34C97D20DA57A10036BCDF /* MTAddCollectionViewCell.m */,
+				0E34C97E20DA57A10036BCDF /* MTAddCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E34C94720DA40420036BCDF /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+				0EC49C5120DB77D8005F6D9E /* MTMoneyMode.h */,
+				0EC49C5220DB77D8005F6D9E /* MTMoneyMode.m */,
+			);
+			path = Mode;
+			sourceTree = "<group>";
+		};
+		0E34C94820DA40490036BCDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E34C96F20DA4A510036BCDF /* MTChartTableViewCell.h */,
+				0E34C97020DA4A510036BCDF /* MTChartTableViewCell.m */,
+				0E34C97120DA4A510036BCDF /* MTChartTableViewCell.xib */,
+				0ED05F1620E0811B007DA24B /* MTChatBingTableViewCell.h */,
+				0ED05F1720E0811B007DA24B /* MTChatBingTableViewCell.m */,
+				0ED05F1820E0811B007DA24B /* MTChatBingTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E34C94920DA404E0036BCDF /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mode;
+			sourceTree = "<group>";
+		};
+		0E34C94A20DA40540036BCDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E34C94F20DA40D20036BCDF /* MTHomeTableViewCell.h */,
+				0E34C95020DA40D20036BCDF /* MTHomeTableViewCell.m */,
+				0E34C95120DA40D20036BCDF /* MTHomeTableViewCell.xib */,
+				0E34C95720DA43840036BCDF /* MTHomeDateTableViewCell.h */,
+				0E34C95820DA43840036BCDF /* MTHomeDateTableViewCell.m */,
+				0E34C95920DA43840036BCDF /* MTHomeDateTableViewCell.xib */,
+				0E34C95C20DA46360036BCDF /* MTFootView.h */,
+				0E34C95D20DA46360036BCDF /* MTFootView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E34C94B20DA40590036BCDF /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mode;
+			sourceTree = "<group>";
+		};
+		0E34C95F20DA48500036BCDF /* WSPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				0E34C96020DA48500036BCDF /* WSChart.h */,
+				0E34C96120DA48500036BCDF /* WSChart.m */,
+				0E34C96220DA48500036BCDF /* WSPieChart.h */,
+				0E34C96320DA48500036BCDF /* WSPieChart.m */,
+				0E34C96420DA48500036BCDF /* WSPieForeBGView.h */,
+				0E34C96520DA48500036BCDF /* WSPieForeBGView.m */,
+				0E34C96620DA48500036BCDF /* WSPieItemsView.h */,
+				0E34C96720DA48500036BCDF /* WSPieItemsView.m */,
+				0E34C96820DA48500036BCDF /* WSShowInfoView.h */,
+				0E34C96920DA48500036BCDF /* WSShowInfoView.m */,
+			);
+			path = WSPieChart;
+			sourceTree = "<group>";
+		};
+		0EC49C4520DB50EA005F6D9E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0EC49C4B20DB550C005F6D9E /* VIew */,
+				0EC49C4620DB5404005F6D9E /* MTCategorysViewController.h */,
+				0EC49C4720DB5404005F6D9E /* MTCategorysViewController.m */,
+				0EC49C4820DB5404005F6D9E /* MTCategorysViewController.xib */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0EC49C4B20DB550C005F6D9E /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				0EC49C4C20DB552D005F6D9E /* MTCategoryTableViewCell.h */,
+				0EC49C4D20DB552D005F6D9E /* MTCategoryTableViewCell.m */,
+				0EC49C4E20DB552D005F6D9E /* MTCategoryTableViewCell.xib */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		45F25DF9DB117E7C0BCC3092 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C04D2BEEDF7954EBB217623 /* libPods-AccountingExpert.a */,
+				A5D830F518E0BC25E2C0AD7A /* libPods-AccountingExpertTests.a */,
+				E89420177E6EBE8B32B037D8 /* libPods-AccountingExpertUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AD39AA820DD5102006E9777 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				9AD39AA920DD5116006E9777 /* WBNativityShare.h */,
+				9AD39AAA20DD5116006E9777 /* WBNativityShare.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F1E66978D414F281198A846E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				207223CB55AC56DE85C52C95 /* Pods-AccountingExpert.debug.xcconfig */,
+				E8593FF75DC47332A277E605 /* Pods-AccountingExpert.release.xcconfig */,
+				9F0DBF91C7A71B6810BC6763 /* Pods-AccountingExpertTests.debug.xcconfig */,
+				99C4D95839F09F3FD758A13E /* Pods-AccountingExpertTests.release.xcconfig */,
+				0F6F63BFE4CA804BEA221DBB /* Pods-AccountingExpertUITests.debug.xcconfig */,
+				49DFC52B8A45B4B3F4D4BAA6 /* Pods-AccountingExpertUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E2D605720D8CE1100F0EF9E /* AccountingExpert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E2D608420D8CE1B00F0EF9E /* Build configuration list for PBXNativeTarget "AccountingExpert" */;
+			buildPhases = (
+				B71B14D792DE9F5D80DF9039 /* [CP] Check Pods Manifest.lock */,
+				0E2D605420D8CE1100F0EF9E /* Sources */,
+				0E2D605520D8CE1100F0EF9E /* Frameworks */,
+				0E2D605620D8CE1100F0EF9E /* Resources */,
+				0BBF72D5DB3AFFB14AB0CDD3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AccountingExpert;
+			productName = AccountingExpert;
+			productReference = 0E2D605820D8CE1100F0EF9E /* AccountingExpert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E2D606F20D8CE1B00F0EF9E /* AccountingExpertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E2D608720D8CE1B00F0EF9E /* Build configuration list for PBXNativeTarget "AccountingExpertTests" */;
+			buildPhases = (
+				433082BC16C65310271EC2F0 /* [CP] Check Pods Manifest.lock */,
+				0E2D606C20D8CE1B00F0EF9E /* Sources */,
+				0E2D606D20D8CE1B00F0EF9E /* Frameworks */,
+				0E2D606E20D8CE1B00F0EF9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E2D607220D8CE1B00F0EF9E /* PBXTargetDependency */,
+			);
+			name = AccountingExpertTests;
+			productName = AccountingExpertTests;
+			productReference = 0E2D607020D8CE1B00F0EF9E /* AccountingExpertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0E2D607A20D8CE1B00F0EF9E /* AccountingExpertUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E2D608A20D8CE1B00F0EF9E /* Build configuration list for PBXNativeTarget "AccountingExpertUITests" */;
+			buildPhases = (
+				A67FA0CBB529A757F85C787A /* [CP] Check Pods Manifest.lock */,
+				0E2D607720D8CE1B00F0EF9E /* Sources */,
+				0E2D607820D8CE1B00F0EF9E /* Frameworks */,
+				0E2D607920D8CE1B00F0EF9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E2D607D20D8CE1B00F0EF9E /* PBXTargetDependency */,
+			);
+			name = AccountingExpertUITests;
+			productName = AccountingExpertUITests;
+			productReference = 0E2D607B20D8CE1B00F0EF9E /* AccountingExpertUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E2D605020D8CE1100F0EF9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "mt y";
+				TargetAttributes = {
+					0E2D605720D8CE1100F0EF9E = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					0E2D606F20D8CE1B00F0EF9E = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 0E2D605720D8CE1100F0EF9E;
+					};
+					0E2D607A20D8CE1B00F0EF9E = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 0E2D605720D8CE1100F0EF9E;
+					};
+				};
+			};
+			buildConfigurationList = 0E2D605320D8CE1100F0EF9E /* Build configuration list for PBXProject "AccountingExpert" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E2D604F20D8CE1000F0EF9E;
+			productRefGroup = 0E2D605920D8CE1100F0EF9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E2D605720D8CE1100F0EF9E /* AccountingExpert */,
+				0E2D606F20D8CE1B00F0EF9E /* AccountingExpertTests */,
+				0E2D607A20D8CE1B00F0EF9E /* AccountingExpertUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E2D605620D8CE1100F0EF9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED05F1A20E0811B007DA24B /* MTChatBingTableViewCell.xib in Resources */,
+				0E2D609F20D8D43B00F0EF9E /* MTChartViewController.xib in Resources */,
+				0E34C98020DA57A10036BCDF /* MTAddCollectionViewCell.xib in Resources */,
+				0E2D60AF20D8D48300F0EF9E /* MTCardsViewController.xib in Resources */,
+				0E2D60B420D8D49300F0EF9E /* MTSettingViewController.xib in Resources */,
+				0E34C95B20DA43840036BCDF /* MTHomeDateTableViewCell.xib in Resources */,
+				0E2D606820D8CE1B00F0EF9E /* LaunchScreen.storyboard in Resources */,
+				0E2D606520D8CE1B00F0EF9E /* Assets.xcassets in Resources */,
+				0E34C97820DA4F780036BCDF /* MTCardsTableViewCell.xib in Resources */,
+				0E2D60A720D8D46000F0EF9E /* MTAddViewController.xib in Resources */,
+				0E2D609A20D8D42300F0EF9E /* MTHomeViewController.xib in Resources */,
+				0EC49C4A20DB5404005F6D9E /* MTCategorysViewController.xib in Resources */,
+				0E34C97320DA4A510036BCDF /* MTChartTableViewCell.xib in Resources */,
+				0E2D606320D8CE1100F0EF9E /* Main.storyboard in Resources */,
+				0E34C95320DA40D20036BCDF /* MTHomeTableViewCell.xib in Resources */,
+				0EC49C5020DB552D005F6D9E /* MTCategoryTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E2D606E20D8CE1B00F0EF9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E2D607920D8CE1B00F0EF9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BBF72D5DB3AFFB14AB0CDD3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AccountingExpert/Pods-AccountingExpert-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AccountingExpert/Pods-AccountingExpert-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		433082BC16C65310271EC2F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AccountingExpertTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A67FA0CBB529A757F85C787A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AccountingExpertUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B71B14D792DE9F5D80DF9039 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AccountingExpert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E2D605420D8CE1100F0EF9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E34C96A20DA48500036BCDF /* WSChart.m in Sources */,
+				0E34C95E20DA46360036BCDF /* MTFootView.m in Sources */,
+				0E34C96B20DA48500036BCDF /* WSPieChart.m in Sources */,
+				0E2D60C120D8D9F000F0EF9E /* UIView+Extension.m in Sources */,
+				0E34C96D20DA48500036BCDF /* WSPieItemsView.m in Sources */,
+				0E34C96C20DA48500036BCDF /* WSPieForeBGView.m in Sources */,
+				0EC49C3F20DB4C46005F6D9E /* PGGDropView.m in Sources */,
+				9AD39AAB20DD5116006E9777 /* WBNativityShare.m in Sources */,
+				0E2D60C720D8DC8C00F0EF9E /* LLTabBar.m in Sources */,
+				0E34C95220DA40D20036BCDF /* MTHomeTableViewCell.m in Sources */,
+				0E34C97220DA4A510036BCDF /* MTChartTableViewCell.m in Sources */,
+				0E2D609E20D8D43B00F0EF9E /* MTChartViewController.m in Sources */,
+				0EC49C5620DB83E2005F6D9E /* MTAddModeTool.m in Sources */,
+				0E34C96E20DA48500036BCDF /* WSShowInfoView.m in Sources */,
+				0E2D60AE20D8D48300F0EF9E /* MTCardsViewController.m in Sources */,
+				0EC49C5320DB77D8005F6D9E /* MTMoneyMode.m in Sources */,
+				0E34C97F20DA57A10036BCDF /* MTAddCollectionViewCell.m in Sources */,
+				0E34C95A20DA43840036BCDF /* MTHomeDateTableViewCell.m in Sources */,
+				0E2D60C820D8DC8C00F0EF9E /* LLTabBarItem.m in Sources */,
+				0E2D606B20D8CE1B00F0EF9E /* main.m in Sources */,
+				0E2D609920D8D42300F0EF9E /* MTHomeViewController.m in Sources */,
+				0EC49C4F20DB552D005F6D9E /* MTCategoryTableViewCell.m in Sources */,
+				0ED05F1920E0811B007DA24B /* MTChatBingTableViewCell.m in Sources */,
+				0EC49C4920DB5404005F6D9E /* MTCategorysViewController.m in Sources */,
+				0E2D60B320D8D49300F0EF9E /* MTSettingViewController.m in Sources */,
+				0E2D605D20D8CE1100F0EF9E /* AppDelegate.m in Sources */,
+				0E2D60BE20D8D9B200F0EF9E /* UIBarButtonItem+Extension.m in Sources */,
+				0E2D60B820D8D61A00F0EF9E /* ZHNavViewController.m in Sources */,
+				0E34C97720DA4F780036BCDF /* MTCardsTableViewCell.m in Sources */,
+				0E2D60A620D8D46000F0EF9E /* MTAddViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E2D606C20D8CE1B00F0EF9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E2D607520D8CE1B00F0EF9E /* AccountingExpertTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E2D607720D8CE1B00F0EF9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E2D608020D8CE1B00F0EF9E /* AccountingExpertUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E2D607220D8CE1B00F0EF9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E2D605720D8CE1100F0EF9E /* AccountingExpert */;
+			targetProxy = 0E2D607120D8CE1B00F0EF9E /* PBXContainerItemProxy */;
+		};
+		0E2D607D20D8CE1B00F0EF9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E2D605720D8CE1100F0EF9E /* AccountingExpert */;
+			targetProxy = 0E2D607C20D8CE1B00F0EF9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0E2D606120D8CE1100F0EF9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E2D606220D8CE1100F0EF9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0E2D606620D8CE1B00F0EF9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E2D606720D8CE1B00F0EF9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E2D608220D8CE1B00F0EF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0E2D608320D8CE1B00F0EF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E2D608520D8CE1B00F0EF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 207223CB55AC56DE85C52C95 /* Pods-AccountingExpert.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AccountingExpert/AccountingExpert.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ESH5D59Q34;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AccountingExpert/PrefixHeader.pch";
+				INFOPLIST_FILE = AccountingExpert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Record.Expet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0E2D608620D8CE1B00F0EF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8593FF75DC47332A277E605 /* Pods-AccountingExpert.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AccountingExpert/AccountingExpert.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ESH5D59Q34;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AccountingExpert/PrefixHeader.pch";
+				INFOPLIST_FILE = AccountingExpert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Record.Expet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		0E2D608820D8CE1B00F0EF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F0DBF91C7A71B6810BC6763 /* Pods-AccountingExpertTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AccountingExpertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com..AccountingExpertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AccountingExpert.app/AccountingExpert";
+			};
+			name = Debug;
+		};
+		0E2D608920D8CE1B00F0EF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99C4D95839F09F3FD758A13E /* Pods-AccountingExpertTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AccountingExpertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com..AccountingExpertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AccountingExpert.app/AccountingExpert";
+			};
+			name = Release;
+		};
+		0E2D608B20D8CE1B00F0EF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F6F63BFE4CA804BEA221DBB /* Pods-AccountingExpertUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AccountingExpertUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com..AccountingExpertUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AccountingExpert;
+			};
+			name = Debug;
+		};
+		0E2D608C20D8CE1B00F0EF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49DFC52B8A45B4B3F4D4BAA6 /* Pods-AccountingExpertUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AccountingExpertUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com..AccountingExpertUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AccountingExpert;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E2D605320D8CE1100F0EF9E /* Build configuration list for PBXProject "AccountingExpert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E2D608220D8CE1B00F0EF9E /* Debug */,
+				0E2D608320D8CE1B00F0EF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E2D608420D8CE1B00F0EF9E /* Build configuration list for PBXNativeTarget "AccountingExpert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E2D608520D8CE1B00F0EF9E /* Debug */,
+				0E2D608620D8CE1B00F0EF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E2D608720D8CE1B00F0EF9E /* Build configuration list for PBXNativeTarget "AccountingExpertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E2D608820D8CE1B00F0EF9E /* Debug */,
+				0E2D608920D8CE1B00F0EF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E2D608A20D8CE1B00F0EF9E /* Build configuration list for PBXNativeTarget "AccountingExpertUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E2D608B20D8CE1B00F0EF9E /* Debug */,
+				0E2D608C20D8CE1B00F0EF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E2D605020D8CE1100F0EF9E /* Project object */;
+}

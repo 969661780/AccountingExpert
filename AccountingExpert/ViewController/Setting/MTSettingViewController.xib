@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MTSettingViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egY-yr-3Rg">
+                    <rect key="frame" x="12" y="40" width="351" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="DeN-UD-9yQ"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="EditCategory"/>
+                    <connections>
+                        <action selector="oneBtn:" destination="-1" eventType="touchUpInside" id="LrE-6g-XI5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6M-ew-Z9t">
+                    <rect key="frame" x="12" y="135" width="351" height="74"/>
+                    <state key="normal" backgroundImage="Shareapp"/>
+                    <connections>
+                        <action selector="threeBtn:" destination="-1" eventType="touchUpInside" id="EEx-Zl-DiT"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RT7-kA-lKr">
+                    <rect key="frame" x="90" y="162" width="83" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09O-S4-xtK">
+                    <rect key="frame" x="12" y="234" width="351" height="74"/>
+                    <state key="normal" backgroundImage="RecordExpert"/>
+                    <connections>
+                        <action selector="fomeBtn:" destination="-1" eventType="touchUpInside" id="MFi-fh-5Zp"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record Expert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Op-FN-FmJ">
+                    <rect key="frame" x="90" y="261" width="115" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqR-LN-5Kd">
+                    <rect key="frame" x="90" y="65" width="110" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="09O-S4-xtK" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="12" id="5uc-xM-96m"/>
+                <constraint firstItem="u6M-ew-Z9t" firstAttribute="leading" secondItem="egY-yr-3Rg" secondAttribute="leading" id="8hg-iB-oCn"/>
+                <constraint firstItem="u6M-ew-Z9t" firstAttribute="width" secondItem="egY-yr-3Rg" secondAttribute="width" id="DFz-xm-XGj"/>
+                <constraint firstItem="qqR-LN-5Kd" firstAttribute="centerY" secondItem="egY-yr-3Rg" secondAttribute="centerY" id="I70-0f-lhU"/>
+                <constraint firstItem="09O-S4-xtK" firstAttribute="top" secondItem="u6M-ew-Z9t" secondAttribute="bottom" constant="25" id="KUU-HB-7aP"/>
+                <constraint firstItem="egY-yr-3Rg" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="RJH-nX-CA7"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="09O-S4-xtK" secondAttribute="trailing" constant="12" id="Rci-8K-0jy"/>
+                <constraint firstItem="RT7-kA-lKr" firstAttribute="leading" secondItem="qqR-LN-5Kd" secondAttribute="leading" id="RpC-iQ-sQT"/>
+                <constraint firstItem="u6M-ew-Z9t" firstAttribute="top" secondItem="egY-yr-3Rg" secondAttribute="bottom" constant="25" id="VHD-rk-9e4"/>
+                <constraint firstItem="6Op-FN-FmJ" firstAttribute="centerY" secondItem="09O-S4-xtK" secondAttribute="centerY" id="ctJ-VT-yIj"/>
+                <constraint firstItem="egY-yr-3Rg" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="12" id="dlJ-ka-D4d"/>
+                <constraint firstItem="qqR-LN-5Kd" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="90" id="hzO-GV-WQ0"/>
+                <constraint firstItem="09O-S4-xtK" firstAttribute="height" secondItem="u6M-ew-Z9t" secondAttribute="height" id="jSq-ww-Mmc"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="egY-yr-3Rg" secondAttribute="trailing" constant="12" id="jzc-BQ-xpy"/>
+                <constraint firstItem="RT7-kA-lKr" firstAttribute="centerY" secondItem="u6M-ew-Z9t" secondAttribute="centerY" id="sfk-hM-lqp"/>
+                <constraint firstItem="6Op-FN-FmJ" firstAttribute="leading" secondItem="RT7-kA-lKr" secondAttribute="leading" id="wGe-WD-KkO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="EditCategory" width="355" height="74"/>
+        <image name="RecordExpert" width="355" height="74"/>
+        <image name="Shareapp" width="355" height="74"/>
+    </resources>
+</document>

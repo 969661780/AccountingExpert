@@ -1,0 +1,95 @@
+//
+//  PrefixHeader.pch
+//  AccountingExpert
+//
+//  Created by mt y on 2018/6/19.
+//  Copyright © 2018年 mt y. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+Extension.h"
+
+#define cardMoney @"cardMoney"
+#define IncomeCategory @"IncomeCategory"
+#define ExpenceCategory @"ExpenceCategory"
+
+#define AddIncomeCategory @"AddIncomeCategory.plist"
+#define AddExpenceCategory @"AddExpenceCategory.plist"
+#define AddExpenceCategoryarchiver @"AddExpenceCategoryarchiver"
+#define AddIncomeCategoryarchiver @"AddIncomeCategoryarchiver"
+/**屏幕宽和高*/
+#define ZHScreenW [UIScreen mainScreen].bounds.size.width
+#define ZHScreenH [UIScreen mainScreen].bounds.size.height
+/**字体*/
+#define ZHFontSize(x) [UIFont systemFontOfSize:(ZHScreenW > 374 ? (ZHScreenW > 375 ? x * 1.1 : x ) : x / 1.1)]
+#define ZHFontLineSize(x) [UIFont systemFontOfSize:(ZHScreenW > 374 ? (CGFloat)x  : (CGFloat)x / 1.1) weight:UIFontWeightThin]
+/**加粗字体*/
+#define ZHFontBoldSize(x) [UIFont boldSystemFontOfSize:(ZHScreenW > 374 ? (CGFloat)x  : (CGFloat)x / 1.1)]
+#define OVERSTRIKING     @"Helvetica-Bold"
+#define SYSTEMFONT(FONTSIZE)    [UIFont systemFontOfSize:FONTSIZE]
+#define OVERSTRIKINGFONT(FONTSIZE)    [UIFont fontWithName:(OVERSTRIKING) size:(FONTSIZE)]
+
+/**十六进制颜色*/
+#define UIColorWithRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+/** RGB颜色 */
+#define ZHCololorRGB(RED,GREEN,BLUE,ALPHA) [UIColor colorWithRed:RED/255.0 green:GREEN/255.0 blue:BLUE/255.0 alpha:ALPHA]
+/** 常用颜色值 */
+#define ZHThemeColor      UIColorWithRGB(0xF80034) //红色主题色
+#define ZHBackgroundColor UIColorWithRGB(0xf7f7f7)//底灰
+#define ZHLineColor       UIColorWithRGB(0xf1f2f4) //线的颜色
+#define ZHTitleColor      UIColorWithRGB(0x282828) //标题的颜色
+#define ZHCellTitleColor  UIColorWithRGB(0x323232)   //cell中颜色的标题
+#define ZHSubTitleColor   UIColorWithRGB(0x656565) //子标题的颜色
+#define ZHClearColor      [UIColor clearColor]//透明色
+#define ZHXXColor         [UIColor redColor]//星星的红色
+
+////根据屏幕宽度计算对应View的高
+#define ZHFit(value) ((value * ZHScreenW) / 375.0f)
+
+//字体适配统一
+#define ZHFont_Title ZHFontSize(15.0)
+#define ZHFont_Detitle ZHFontSize(14.0)
+#define ZHFont_BtnTitle ZHFontSize(16.0)
+#define ZHFont_default ZHFontSize(17.0)
+#define ZHFont_small ZHFontSize(12.0)
+
+//适配iOS11的代码
+#define AdjustsScrollViewInsetNever(controller,view) if(@available(iOS 11.0, *)) {view.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;} else if([controller isKindOfClass:[UIViewController class]]) {controller.automaticallyAdjustsScrollViewInsets = false;}
+////强弱引用
+//#define kWeakSelf(type)  __weak typeof(type) weak##type = type;
+//#define kStrongSelf(type) __strong typeof(type) type = weak##type;
+
+
+#pragma mark - weak / strong
+#define CHKit_WeakSelf        @CHKit_Weakify(self);
+#define CHKit_StrongSelf      @CHKit_Strongify(self);
+
+/*！
+ * 强弱引用转换，用于解决代码块（block）与强引用self之间的循环引用问题
+ * 调用方式: `@BAKit_Weakify`实现弱引用转换，`@BAKit_Strongify`实现强引用转换
+ *
+ * 示例：
+ * @CHKit_Weakify
+ * [obj block:^{
+ * @strongify_self
+ * self.property = something;
+ * }];
+ */
+#ifndef CHKit_Weakify
+#if DEBUG
+#if __has_feature(objc_arc)
+#define CHKit_Weakify(object) autoreleasepool{} __weak __typeof__(object) weak##_##object = object;
+#else
+#define CHKit_Weakify(object) autoreleasepool{} __block __typeof__(object) block##_##object = object;
+#endif
+#else
+#if __has_feature(objc_arc)
+#define CHKit_Weakify(object) try{} @finally{} {} __weak __typeof__(object) weak##_##object = object;
+#else
+#define CHKit_Weakify(object) try{} @finally{} {} __block __typeof__(object) block##_##object = object;
+#endif
+#endif
+#endif
+#endif /* PrefixHeader_pch */
